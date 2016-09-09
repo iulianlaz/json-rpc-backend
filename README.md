@@ -12,6 +12,9 @@ but other services could be added as well.
  * Service layer
  * Data access object (DAO) layer 
 
+### Configuration
+ TBD
+
 ### Examples
 
 #### Request
