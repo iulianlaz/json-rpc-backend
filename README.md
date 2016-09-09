@@ -11,9 +11,13 @@ but other services could be added as well.
  * Executor layer
  * Service layer
  * Data access object (DAO) layer 
+ 
+ Diagram that describe the architecture:
+  ![Architecture](/images/jsonrpc_diagram.png)
 
-### Configuration
- TBD
+### Technologies
+ * Node.js
+ * Elasticsearch
 
 ### Examples
 
