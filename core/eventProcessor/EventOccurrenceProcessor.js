@@ -126,7 +126,7 @@ module.exports = EventOccurrenceProcessor = function() {
                 cachedScore['created'] = Util.getCurrentTime();
                 //FIXME: Save to ES
                 saveToDb_(userId, cachedScore);
-                console.log('>>>>>>>> Enqueue new score...');
+
                 var avScoreQueue = cacheManager_.getQueue(userId, NodeCacheModule.AV_SCORE_QUEUE);
                 avScoreQueue.enqueue(cachedScore);
             }

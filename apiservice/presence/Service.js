@@ -146,7 +146,6 @@ module.exports = Service = function() {
                 (data['lastUpdate']['class'] === EventProcessor.eventClass['EVENT'])) {
 
                 eventProcessor_.sendEventForProcessing(userId_, data['lastUpdate']);
-                console.log('>>>>>>>>>>>>>>>>>>>>>> Process event  ended?<<<<<<<<<<<<<');
             }
         }
 

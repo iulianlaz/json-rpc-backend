@@ -66,11 +66,7 @@ module.exports = EventClassProcessor = function() {
             if (cache.hasOwnProperty(userId)) {
                 console.log('>>>>>>>> Internal processing...');
                 var testScore = cache[userId].getQueue(NodeCacheModule.AV_SCORE_QUEUE);
-                console.log('>>>>>>>> ---------- AvScore Queue: ----------');
-                console.log(testScore.getAllElements());
                 var attendingEvents = cache[userId].getAttendingEventsCache().getAllElements();
-                console.log('>>>>>>>> ---------- Attending Events Queue: ----------');
-                console.log(attendingEvents);
                 internalProcessEventClass_(userId, attendingEvents);
             }
         }
@@ -200,14 +196,13 @@ module.exports = EventClassProcessor = function() {
             //throw exception
             return false;
         }
-        console.log('>>>>>>>>>>>> Event is already in cache?');
+
         var attendingEvents = cacheManager_.getAttendingEventsCacheForUser(userId);
         var allEvents = attendingEvents.getAllElements();
         for (var eventIndex in allEvents) {
             if (allEvents.hasOwnProperty(eventIndex)) {
                 if (allEvents[eventIndex]['eventId'] === event['eventId']) {
                     //FIXME: Update event from ES
-                    console.log('>>>>>>>>>>>> Event updated...');
                     allEvents[eventIndex] = event;
                     return true;
                 }
