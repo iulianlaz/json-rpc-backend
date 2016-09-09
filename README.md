@@ -20,7 +20,7 @@ but other services could be added as well.
 
 ![Architecture](/images/request_explained.png)
 
-As you can see from diagram, you can create your own service if you follow the same structure as presence service.
+As you can see from diagram, you can create your own service if you follow the same structure as presence service. Also, you are free to use what database you want (e.g. MySQL, MongoDB)
 
 ### Technologies
  * Node.js
