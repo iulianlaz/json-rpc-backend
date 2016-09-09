@@ -13,7 +13,8 @@ but other services could be added as well.
  * Data access object (DAO) layer 
  
  Diagram that describe the architecture:
-  ![Architecture](/images/jsonrpc_diagram.png)
+
+![Architecture](/images/jsonrpc_diagram.png)
 
 ### Technologies
  * Node.js
