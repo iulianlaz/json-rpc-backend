@@ -5,6 +5,13 @@
  JSON-RPC presence service was used for my bachelor thesis "Web Presence Detection", 
 but other services could be added as well.
 
+#### Structure
+ The code is structured as follows:
+ * Request layer - It intercepts and handles the request. Also an object with request information is built
+ * Executor layer
+ * Service layer
+ * Data access object (DAO) layer 
+
 ### Examples
 
 #### Request
