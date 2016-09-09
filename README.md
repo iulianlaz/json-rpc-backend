@@ -16,6 +16,12 @@ but other services could be added as well.
 
 ![Architecture](/images/jsonrpc_diagram.png)
 
+##### How is executed PresenceService.read method
+
+![Architecture](/images/request_explained.png)
+
+As you can see from diagram, you can create your own service if you follow the same structure as presence service.
+
 ### Technologies
  * Node.js
  * Elasticsearch
