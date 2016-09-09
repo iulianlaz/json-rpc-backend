@@ -12,7 +12,7 @@ but other services could be added as well.
  * Service layer
  * Data access object (DAO) layer 
  
- Diagram that describe the architecture:
+####Diagram that describes the architecture
 
 ![Architecture](/images/jsonrpc_diagram.png)
 
