@@ -33,7 +33,7 @@ var server = new Server();
 
 server.start();
 //setTimeout(function() { server.stop() }, 5000);
-```javascript
+```
 
 
 #### Request
