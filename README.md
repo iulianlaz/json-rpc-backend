@@ -27,6 +27,14 @@ As you can see from diagram, you can create your own service if you follow the s
  * Elasticsearch
 
 ### Examples
+```javascript
+var Server = require('apiserver/jsonrpc/HTTPServer.js');
+var server = new Server();
+
+server.start();
+//setTimeout(function() { server.stop() }, 5000);
+```javascript
+
 
 #### Request
 ```json
